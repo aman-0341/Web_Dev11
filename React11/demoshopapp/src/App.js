@@ -34,7 +34,9 @@ function App() {
   ]
   return (
     <div>
-      <Item name={response[0].ItemName}></Item>
+      <Item name={response[0].ItemName}>
+        Hello Ji,How are you?
+      </Item>
       <ItemDate date={response[0].ItemDate1} month ={response[0].ItemMonth} year ={response[0].ItemYear}></ItemDate>
 
       <Item name={response[1].ItemName}></Item>
