@@ -1,6 +1,7 @@
 import './App.css';
 import Item from './components/Item';
 import ItemDate from './components/ItemDate.js'
+import Card from './components/Card.js'
 
 function App() {
   const response=
@@ -34,6 +35,7 @@ function App() {
   ]
   return (
     <div>
+      <Card>
       <Item name={response[0].ItemName}>
         Hello Ji,How are you?
       </Item>
@@ -43,7 +45,9 @@ function App() {
       <ItemDate date={response[1].ItemDate1} month={response[1].ItemMonth} year={response[1].ItemYear}></ItemDate>
       <Item name={response[2].ItemName}></Item>
       <ItemDate date={response[2].ItemDate1} month={response[2].ItemMonth} year={response[2].ItemYear}></ItemDate>
+      </Card>
       Hello Jee
+      
 
     </div>
     
