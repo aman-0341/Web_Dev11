@@ -3,15 +3,44 @@ import Item from './components/Item';
 import ItemDate from './components/ItemDate.js'
 
 function App() {
+  const response=
+  [
+    {
+      ItemName:"Nirma",
+      ItemDate1:"20",
+      ItemMonth:"June",
+      ItemYear:"1998"
+
+
+    },
+    {
+      ItemName:"Nirma2",
+      ItemDate1:"22",
+      ItemMonth:"July",
+      ItemYear:"2000"
+
+
+    },
+    {
+      ItemName:"Nirma3",
+      ItemDate1:"24",
+      ItemMonth:"September",
+      ItemYear:"2010"
+
+
+    }
+
+
+  ]
   return (
     <div>
-      <Item name="Nirma"></Item>
-      <ItemDate date="20" month ="June" year ="1998" ></ItemDate>
+      <Item name={response[0].ItemName}></Item>
+      <ItemDate date={response[0].ItemDate1} month ={response[0].ItemMonth} year ={response[0].ItemYear}></ItemDate>
 
-      <Item name="SurfExcel"></Item>
-      <ItemDate date="22" month="July" year="2000"></ItemDate>
-      <Item name="555"></Item>
-      <ItemDate date="24" month="September" year="2010"></ItemDate>
+      <Item name={response[1].ItemName}></Item>
+      <ItemDate date={response[1].ItemDate1} month={response[1].ItemMonth} year={response[1].ItemYear}></ItemDate>
+      <Item name={response[2].ItemName}></Item>
+      <ItemDate date={response[2].ItemDate1} month={response[2].ItemMonth} year={response[2].ItemYear}></ItemDate>
       Hello Jee
 
     </div>
