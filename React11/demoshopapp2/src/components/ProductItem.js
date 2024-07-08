@@ -5,6 +5,10 @@ import Card from './Card';
 import './ProductItem.css';
 
 const ProductItem = (props) => {
+    function clickHandler()
+    {
+        console.log("Button Clicked");
+    }
 
   
 
@@ -14,6 +18,7 @@ const ProductItem = (props) => {
       <div className='product-item__description'>
         <h2>{props.title}</h2>
       </div>
+      <button onClick={clickHandler}>Add To Cart</button>
     </Card>
   );
 }
