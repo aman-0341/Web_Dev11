@@ -29,9 +29,14 @@ function ProductForm(props)
 
         console.log(productData);
 
+
+        //Function a=calling to pass data to parent
+        props.onSaveProduct(productData);
+
         setTitle(' ');
         setDate(' ');
     }
+    
     return(<form onSubmit={submitHandler}>
         <div className='new-product_controls'>
         <label>Title</label>

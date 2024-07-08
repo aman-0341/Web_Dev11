@@ -30,12 +30,17 @@ const App = () => {
       date: new Date(2021, 5, 5),
     },
   ];
+  function printProductData(data) {
+    console.log("i am inside APP.js")
+    console.log(data)
+  }
+
 
   
 
   return (
     <div>
-      <NewProduct/>
+      <NewProduct aman11={printProductData}/>
       
       <Products items={products} />
     </div>
