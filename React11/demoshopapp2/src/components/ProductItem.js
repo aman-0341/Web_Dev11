@@ -5,8 +5,10 @@ import Card from './Card';
 import './ProductItem.css';
 
 const ProductItem = (props) => {
+    const title=props.title;
     function clickHandler()
     {
+        title="popcorn";
         console.log("Button Clicked");
     }
 
@@ -16,7 +18,7 @@ const ProductItem = (props) => {
     <Card className='product-item'>
       <ProductDate date={props.date} />
       <div className='product-item__description'>
-        <h2>{props.title}</h2>
+        <h2>{title}</h2>
       </div>
       <button onClick={clickHandler}>Add To Cart</button>
     </Card>
